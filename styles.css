@@ -102,7 +102,8 @@ header .navbar {
     background: var(--secondary-color);
 }
 
-.navbar:where(#menu-close-button, #menu-open-button) {
+.navbar #menu-close-button,
+.navbar #menu-open-button {
     display: none;
 }
 
@@ -182,7 +183,8 @@ header .navbar {
         --font-size-xxxl: 1.8rem;
     }
 
-    .navbar:where(#menu-close-button, #menu-open-button) {
+    .navbar #menu-close-button,
+    .navbar #menu-open-button {
         display: block;
         font-size: var(--font-size-l);
     }
