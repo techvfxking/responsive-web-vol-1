@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./assets/espresso.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <title>Espresso</title>
 </head>
 
@@ -29,7 +30,7 @@
                     <a href="#menu-section" class="nav-link">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Stories</a>
+                    <a href="#testimonials-section" class="nav-link">Stories</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">Gallery</a>
@@ -127,8 +128,57 @@
                 </ul>
             </div>
         </section>
+
+        <section class="testimonials-section" id="testimonials-section">
+            <h2 class="section-title">Stories</h2>
+            <div class="section-content">
+                <div class="section-content">
+                    <div class="slider-container swiper">
+                        <div class="slider-wrapper">
+                            <ul class="testimonials-list swiper-wrapper">
+                                <li class="testimonial swiper-slide">
+                                    <img src="./assets/user-1.jpg" alt="User 1" class="user-image">
+                                    <h3 class="name">Sarah Johnson</h3>
+                                    <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order
+                                        again!"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="./assets/user-2.jpg" alt="User 2" class="user-image">
+                                    <h3 class="name">James Wilson</h3>
+                                    <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fresh and
+                                        aromatic.
+                                        Quick shipping!"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="./assets/user-3.jpg" alt="User 3" class="user-image">
+                                    <h3 class="name">Michael Brown</h3>
+                                    <i class="feedback">"Fantastiic mocha flavor. Fresh and aromatic. Quick
+                                        shipping"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="./assets/user-4.jpg" alt="User 4" class="user-image">
+                                    <h3 class="name">Emily Harris</h3>
+                                    <i class="feedback">"Excellent quality! Fresh beans and quick delivery. High
+                                        recommend"</i>
+                                </li>
+                                <li class="testimonial swiper-slide">
+                                    <img src="./assets/user-5.jpg" alt="User 5" class="user-image">
+                                    <h3 class="name">Anthony Thompson</h3>
+                                    <i class="feedback">"Best decaf I've tried! Smooth and flavourful. Arrived
+                                        promptly"</i>
+                                </li>
+                            </ul>
+
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-slide-button swiper-button-prev"></div>
+                            <div class="swiper-slide-button swiper-button-next"></div>
+                        </div>
+                    </div>
+                </div>
+        </section>
     </main>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./scripts.js"></script>
 </body>
 
