@@ -469,6 +469,6 @@ header .navbar {
     }
 
     .testimonials-section .swiper-slide-button {
-        display: none;
+        /* display: none; */
     }
 }
