@@ -38,6 +38,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /**Decorations start**/
 
 ul {
@@ -311,6 +315,7 @@ header .navbar {
 }
 
 .testimonials-section .testimonial {
+    user-select: none;
     display: flex;
     padding: 35px;
     text-align: center;
@@ -429,6 +434,41 @@ header .navbar {
     background: transparent;
 }
 
+.footer-section {
+    background: var(--dark-color);
+    padding: 20px 0;
+}
+
+.footer-section .section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-section .social-link-list {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-section .social-link-list .social-link {
+    font-size: var(--font-size-l);
+    transition: 0.3s ease;
+}
+
+.footer-section .social-link-list .social-link:hover,
+.footer-section .policy-text .policy-link:hover {
+    color: var(--secondary-color);
+}
+
+.footer-section .policy-text .separator {
+    margin: 0 5px;
+    color: var(--white-color);
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link) {
+    color: var(--white-color);
+}
+
 @media screen and (max-width: 1024px) {
     .menu-section .menu-list .menu-item {
         width: calc(100% / 3 - 60px);
@@ -510,7 +550,8 @@ header .navbar {
     }
 
     .hero-section .hero-details :is(.subtitle, .description),
-    .about-section .about-details, .contact-section .contact-form {
+    .about-section .about-details,
+    .contact-section .contact-form {
         max-width: 100%;
     }
 
@@ -525,7 +566,7 @@ header .navbar {
 
     .about-section .section-content {
         gap: 70px;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .about-section .about-image-wrapper .about-image {
@@ -569,6 +610,11 @@ header .navbar {
 
     .testimonials-section .slider-wrapper {
         margin: 0 0 30px;
+    }
+
+    .footer-section .section-content {
+        flex-direction: column;
+        gap: 20px;
     }
 
     /* .testimonials-section .swiper-slide-button {
